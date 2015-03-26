@@ -32,7 +32,7 @@ namespace FunctionsLab
                 if (itemPrice < 250)
                 {
                     Console.WriteLine("What is the description of the item?");
-                    var itemDesc = Console.ReadLine();
+                    var itemDesc = Console.ReadLine(); 
                     invalidTerm(itemDesc);
                 }
                 else 
@@ -94,6 +94,7 @@ namespace FunctionsLab
                     Console.WriteLine("Please Escalate to CEO");
                 }
             }
+
             else if (managerLevel == "CEO")
             {
                 Console.WriteLine("You are the CEO You can Approve Anything You Want!");
@@ -105,7 +106,7 @@ namespace FunctionsLab
             if (itemDesc.Contains("entertainment") || itemDesc.Contains("towncar") || itemDesc.Contains("towncars") || itemDesc.Contains("hardware"))
             {
                 Console.WriteLine("Rejected");
-            }
+            } 
             else
             {
                 Console.WriteLine("Approved");
